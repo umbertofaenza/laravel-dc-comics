@@ -6,7 +6,7 @@
 
         <a href="{{ route('comics.create') }}" class="btn btn-primary mb-3">Add comic</a>
 
-        <div class="row g-3">
+        <div class="row g-3 mb-3">
             @forelse($comics as $comic)
                 <div class="col-6">
                     <div class="card h-100">
