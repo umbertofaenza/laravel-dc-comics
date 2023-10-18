@@ -14,6 +14,7 @@
                                 <li>{{ $comic->description }}</li>
                                 <li>{{ $comic->price }}</li>
                             </ul>
+                            <a href="{{ route('comics.show', $comic) }}" class="btn btn-primary">More details</a>
                         </div>
                     </div>
                 </div>
