@@ -4,6 +4,8 @@
     <section class="container mt-5">
         <h1 class="mb-3">{{ $title }}</h1>
 
+        <a href="{{ route('comics.create') }}" class="btn btn-primary mb-3">Add comic</a>
+
         <div class="row g-3">
             @forelse($comics as $comic)
                 <div class="col-6">
