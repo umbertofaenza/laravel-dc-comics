@@ -5,6 +5,8 @@
         <h1 class="mb-5">Aggiungi comic</h1>
 
         <form action="{{ route('comics.store') }}" method="POST" class="row g-3 mb-3">
+            @csrf
+
             <div class="col-6">
                 <label for="title">Title</label>
                 <input type="text" id="title" name="title" class="form-control">
@@ -45,7 +47,7 @@
             </div>
 
             <div class="col-4">
-                <button class="btn btn-success w-25">Add comic</button>
+                <button type="submit" class="btn btn-success w-25">Add comic</button>
             </div>
         </form>
 
