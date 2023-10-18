@@ -9,9 +9,11 @@
         <div class="row g-3">
             @forelse($comics as $comic)
                 <div class="col-6">
-                    <div class="card">
+                    <div class="card h-100">
                         <div class="card-body">
-                            {{ $comic->title }}
+                            <h3>
+                                {{ $comic->title }}
+                            </h3>
                             <ul>
                                 <li>{{ $comic->description }}</li>
                                 <li>{{ $comic->price }}</li>
