@@ -2,7 +2,7 @@
 
 @section('main-content')
     <section class="container mt-5">
-        <a href="{{ route('comics.index') }}" class="btn btn-primary mb-3">Torna alla lista</a>
+        <a href="{{ route('comics.index') }}" class="btn btn-primary mb-3">Go back to list</a>
 
         <div class="row">
             <div class="col-12">
