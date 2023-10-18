@@ -14,7 +14,7 @@
                             class="visually-hidden">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Route::currentRouteName() == 'comics' ? 'active' : '' }}"
+                    <a class="nav-link {{ Route::currentRouteName() == 'comics.index' ? 'active' : '' }}"
                         href="{{ route('comics.index') }}">Comics</a>
                 </li>
         </div>
