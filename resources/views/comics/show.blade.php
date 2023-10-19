@@ -6,6 +6,13 @@
 
         <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning mb-3">Edit comic</a>
 
+        <form action="{{ route('comics.destroy', $comic) }}" method="POST">
+            @csrf
+            @method('DELETE')
+
+            <button class="btn btn-danger mb-3">Delete comic</button>
+        </form>
+
         <div class="row">
             <div class="col-12">
                 <div class="card">
