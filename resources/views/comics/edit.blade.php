@@ -8,6 +8,17 @@
             @csrf
             @method('PUT')
 
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <h3>Error(s):</h3>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             <div class="col-6">
                 <label for="title">Title</label>
                 <input type="text" id="title" name="title" class="form-control" value="{{ $comic->title }}">
